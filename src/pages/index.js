@@ -1,12 +1,9 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+
 
 
 import Layout from "../components/layout"
 import About from "../components/about"
-import Banner from "../components/banner"
-import ScrollDown from "../components/scrolldown"
 import Seo from "../components/seo"
 import Resume from "../components/resume"
 import Portfolio from "../components/portfolio"

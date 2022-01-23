@@ -1,10 +1,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import Navigation from "./navigation"
-import Banner from "./banner"
-import ScrollDown from "./scrolldown"
-import About from "./about"
+import Navigation from "../components/navigation.js"
+import Banner from "./banner.js"
+import ScrollDown from "./scrolldown.js"
+
 
 
 const Header = ({ siteTitle }) => (

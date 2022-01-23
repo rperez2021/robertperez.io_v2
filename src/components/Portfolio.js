@@ -1,6 +1,5 @@
 import * as React from "react";
 
-import Modal from "react-modal";
 import PortfolioModal from "./portfoliomodal"
 
 

@@ -1,6 +1,5 @@
 import * as React from "react";
 import { FaChevronCircleDown } from "react-icons/fa";
-import {Link} from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 
