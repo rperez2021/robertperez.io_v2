@@ -3,7 +3,7 @@ module.exports = {
     title: `Roberto Perez Portfolio`,
     description: `Portfolio Website for Roberto Perez, Web Developer, Tech Enthusiast, Closet Nerd, Husband and Dad`,
     author: `Roberto Perez`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://robertperez.io`,
     keywords: `Web Design, Portfolio, Web Developer, San Diego, Brevity Is, Software Developer, Font-End Web Developer`
   },
   plugins: [
