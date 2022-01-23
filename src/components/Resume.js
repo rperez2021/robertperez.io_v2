@@ -1,8 +1,8 @@
 import * as React from "react";
 
-import Education from "./education";
-import Work from "./work";
-import Skills from "./skills";
+import Education from "./education.js";
+import Work from "./work.js";
+import Skills from "./skills.js";
 
 const Resume = ({ children }) => {
   return (

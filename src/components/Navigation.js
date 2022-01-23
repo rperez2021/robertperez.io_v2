@@ -1,7 +1,5 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import Header from "./header";
 
 const Navigation = () => (
  
