@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { ScrollContext } from 'gatsby-react-router-scroll';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import Header from "./header";
 
 const Navigation = () => (
@@ -11,27 +11,27 @@ const Navigation = () => (
 
         <li className="current">
          
-        <Link activeClass="activelinkstyle" className="linkstyle" to="home" spy={true} smooth={true} duration={500} hashSpy={true}>
+        <a onClick={() => scrollTo('#home')} activeClass="activelinkstyle" className="linkstyle" to="home" spy={true} smooth={true} duration={500} hashSpy={true}>
            Home
-          </Link>
+          </a>
        </li>
 
         <li className="current">
-        <Link activeClass="activelinkstyle" className="linkstyle" to="about" spy={true} smooth={true} duration={500} hashSpy={true}>
+        <a onClick={() => scrollTo('#about')} activeClass="activelinkstyle" className="linkstyle" to="about" spy={true} smooth={true} duration={500} hashSpy={true}>
            About
-        </Link>
+        </a>
        </li>
 
        <li className="current">
-        <Link activeClass="activelinkstyle" className="linkstyle" to="resume" spy={true} smooth={true} duration={500} hashSpy={true}>
+        <a onClick={() => scrollTo('#resume')} activeClass="activelinkstyle" className="linkstyle" to="resume" spy={true} smooth={true} duration={500} hashSpy={true}>
            Resume
-        </Link>
+        </a>
        </li>
 
         <li className="current">
-        <Link activeClass="activelinkstyle" className="linkstyle" to="portfolio" spy={true} smooth={true} duration={500} hashSpy={true}>
+        <a onClick={() => scrollTo('#portfolio')} activeClass="activelinkstyle" className="linkstyle" to="portfolio" spy={true} smooth={true} duration={500} hashSpy={true}>
            Portfolio
-        </Link>
+        </a>
        </li>
 
 

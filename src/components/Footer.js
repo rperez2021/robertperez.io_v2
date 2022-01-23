@@ -1,7 +1,7 @@
 import * as React from "react";
 import SocialLinks from "./sociallinks";
 import { FaChevronCircleUp } from "react-icons/fa";
-import { Link } from 'gatsby'
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Footer = () => (
   <footer id="footer">
@@ -19,15 +19,15 @@ const Footer = () => (
           </li>
           <li>
             Developed in React ⚛️ by{" "}
-            <a href="https://www.robertoperez.io">Roberto Perez</a>
+            <a href="https://robertoperez.io">Roberto Perez</a>
           </li>
         </ul>
       </div>
 
       <div id="go-top">
-      <Link activeClass="active" className="linkstyle" to="home" spy={true} smooth={true} duration={500} >
+      <a onClick={() => scrollTo('#home')} activeClass="active" className="linkstyle" to="home" spy={true} smooth={true} duration={500} >
       <FaChevronCircleUp />
-          </Link>
+          </a>
       </div>
     </div>
   </footer>

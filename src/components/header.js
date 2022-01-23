@@ -8,7 +8,7 @@ import About from "./about"
 
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header id="home">
     
           <Navigation></Navigation>
           <Banner></Banner>

@@ -1,11 +1,7 @@
 import * as React from "react";
 import { FaCodeBranch, FaHtml5, FaCss3, FaJs, FaWordpress, FaNodeJs, FaReact, FaPhp, FaLinux, FaAws, FaJava, FaDocker, FaDatabase } from "react-icons/fa"
+import { DiMongodb, DiJqueryLogo, DiFirebase, DiRuby,  } from "react-icons/di"
 
-
-import ReduxIcon from './icons/Redux.js'
-import MongoIcon from './icons/Mongo.js'
-import JqueryIcon from './icons/Jquery.js'
-import FirebaseIcon from './icons/Firebase.js'
 
 const Skills = () =>  (
     <div className="row skill">
@@ -25,7 +21,7 @@ const Skills = () =>  (
 
         <div className="container">
 
-          <h1>Yeah I got this...</h1>
+          <h1>Tools I use:</h1>
 
           <div className="bgrid-quarters s-bgrid-thirds cf">
             <div className="bars">
@@ -77,7 +73,7 @@ const Skills = () =>  (
 
                 <div className="columns">
                   <li>
-                    <span className="bar-expand gothis" />
+                    <span className="bar-expand gothis"><DiJqueryLogo /></span>
                     <em>JQuery</em>
                   </li>
                 </div>
@@ -87,12 +83,9 @@ const Skills = () =>  (
           </div>
 
 
-        </div>
+        
 
-
-        <div className="container">
-
-          <h1>I think I got this?</h1>
+          
 
           <div className="bgrid-quarters s-bgrid-thirds cf">
             <div className="bars">
@@ -128,14 +121,14 @@ const Skills = () =>  (
 
                 <div className="columns">
                   <li>
-                    <span className="bar-expand gettingit"><MongoIcon /></span>
+                    <span className="bar-expand gettingit"><DiMongodb /></span>
                     <em>MongoDB</em>
                   </li>
                 </div>
 
                 <div className="columns">
                   <li>
-                    <span className="bar-expand gettingit" />
+                    <span className="bar-expand gettingit"><DiFirebase /></span>
                     <em>Firebase</em>
                   </li>
                 </div>
@@ -158,9 +151,6 @@ const Skills = () =>  (
           </div>
 
           <div className="container">
-
-            <h1>Still Learning</h1>
-
             <div className="bgrid-quarters s-bgrid-thirds cf">
               <div className="bars">
                 <ul className="skills">

@@ -14,11 +14,12 @@ const About = ({ children }) => {
                 <div className="three columns">
                     <StaticImage
                         src="../images/tinified/rob_211.jpg"
-                        width={300}
+                        width={400}
                         quality={95}
                         formats={["auto", "webp", "avif"]}
                         alt="Profile Photo"
-                        style={{ marginBottom: `1.45rem` }}
+                        style={{ marginBottom: `1rem`, borderRadius: `100%`}}
+                        
                     />
 
                 </div>

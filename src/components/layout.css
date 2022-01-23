@@ -1159,6 +1159,10 @@ ul#nav li.current .activelinkstyle {
   margin-top: 36px;
   list-style: none;
 }
+
+.bars .skills svg {
+  vertical-align: middle;
+}
 .bars li {
   position: relative;
   margin-bottom: 60px;
@@ -1192,8 +1196,7 @@ ul#nav li.current .activelinkstyle {
 
 .gothis {
   width: 100%;
-  -moz-animation: jquery 2s ease;
-  -webkit-animation: jquery 2s ease;
+
   color: #00cccc;
   
   font-size: 2em
@@ -1201,8 +1204,7 @@ ul#nav li.current .activelinkstyle {
 
 .gettingit {
   width: 100%;
-  -moz-animation: jquery 2s ease;
-  -webkit-animation: jquery 2s ease;
+
   color: #00cccc;
   
   font-size: 2em
@@ -1210,8 +1212,7 @@ ul#nav li.current .activelinkstyle {
 
 .stilllearning {
   width: 100%;
-  -moz-animation: jquery 2s ease;
-  -webkit-animation: jquery 2s ease;
+ 
   color: #00cccc;
   font-size: 2em
 }
@@ -1989,6 +1990,12 @@ footer .social li:first-child {
 }
 #go-top a:hover {
   background-color: #0f9095;
+}
+
+#go-top svg {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
 }
 
 
