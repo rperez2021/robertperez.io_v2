@@ -1,5 +1,7 @@
-import React from "react";
+import * as React from "react";
 import { Link } from "gatsby";
+import { ScrollContext } from 'gatsby-react-router-scroll';
+import Header from "./header";
 
 const Navigation = () => (
  
@@ -8,6 +10,7 @@ const Navigation = () => (
         <ul id="nav" className="nav">
 
         <li className="current">
+         
         <Link activeClass="activelinkstyle" className="linkstyle" to="home" spy={true} smooth={true} duration={500} hashSpy={true}>
            Home
           </Link>

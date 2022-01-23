@@ -4,14 +4,23 @@ import { StaticImage } from "gatsby-plugin-image"
 
 
 import Layout from "../components/layout"
-import About from "../components/About"
+import About from "../components/about"
+import Banner from "../components/banner"
+import ScrollDown from "../components/scrolldown"
 import Seo from "../components/seo"
+import Resume from "../components/resume"
+import Portfolio from "../components/portfolio"
+import Footer from "../components/footer"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <About></About>
-    <h1>Hi people</h1>
+  
+    <About />
+    <Resume/>
+    <Portfolio/>
+    <Footer/>
+    {/* <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <StaticImage
@@ -27,7 +36,7 @@ const IndexPage = () => (
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
       <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
       <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
+    </p> */}
   </Layout>
 )
 

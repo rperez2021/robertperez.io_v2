@@ -1,15 +1,19 @@
-import React from "react";
+import * as React from "react";
 
-import Education from "./Education";
-import Work from "./Work";
-import Skills from "./Skills";
+import Education from "./education";
+import Work from "./work";
+import Skills from "./skills";
 
-const Resume = () => (
+const Resume = ({ children }) => {
+  return (
+
   <section id="resume">
     <Work />
     <Skills />
     <Education />
   </section>
-);
+  )
+}
+;
 
 export default Resume;

@@ -1,5 +1,5 @@
-import React from "react";
-import SocialLinks from "./SocialLinks";
+import * as React from "react";
+import SocialLinks from "./sociallinks";
 
 const Banner = () => (
   <div className="row banner">
