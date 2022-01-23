@@ -1,0 +1,1 @@
+This is a redone version of my personal bio site. Updated dependencies and fixed some issues. 
