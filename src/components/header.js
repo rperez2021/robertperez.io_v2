@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import Navigation from "./navigation.js"
+import Navigation from "../components/navigation.js"
 import Banner from "./banner.js"
 import ScrollDown from "./scrolldown.js"
 
