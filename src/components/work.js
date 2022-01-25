@@ -34,23 +34,7 @@ const Work = () => (
         </div>
       </div>
 
-      <div className="row item">
-        <div className="twelve columns">
-          <h3>Allied Universal Security Services</h3>
-          <p className="info">
-            Client Manager
-            <span>&bull;</span>
-            <em className="date">January 2012 - March 2018</em>
-          </p>
 
-          <p>
-          <li>Managed 42 client accounts and over 200 Security Professionals</li>
-          <li>Generated 8 million in revenue and 2 million in profit</li>
-          <li>Transitioned account portfolio through a large merger while retaining accounts and personnel.</li>
-          <li>Provided excellent customer service and safety emergency training for officers and client personnel. </li>
-          </p>
-        </div>
-      </div>
     </div>
   </div>
 );

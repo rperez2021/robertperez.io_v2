@@ -14,8 +14,7 @@ const Skills = () =>  (
 
       <div className="nine columns main-col">
         <p>
-          I considered putting skill bars below and although ocassionally I feel like I have leveld up, I also dont feel like I am an expert on anything,
-          so I decided to split it into three categories. Tech I feel comfortable with, tech I feel I get the hang of and stuff I am still learning.
+          Below is a list of technologies I am familiar with and have used to create real projects. It is not an definitive list and am constantly learning new tech and experimenting. 
         </p>
 
 
