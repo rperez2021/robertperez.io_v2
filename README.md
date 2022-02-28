@@ -17,3 +17,7 @@ gatsby develop
 Site runs at localhost:8000
 
 Deployed and hosted on Netlify with automatic CI/CD through github.
+
+## A Fancy Repo Visualization
+
+![Visualization of the codebase](./diagram.svg)
