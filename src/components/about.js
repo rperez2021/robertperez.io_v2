@@ -26,7 +26,7 @@ const About = ({ children }) => {
                 <div className="nine columns main-col">
                     <h2>About Me</h2>
                     <p>
-                        I’m a web developer who is interested in creating innovative software, business and technology solutions.
+                        I am a web developer who is interested in creating innovative software, business and technology solutions.
                         I have worked for large corporations and small businesses in a variety of fields and have transitioned into web development
                         full time.
                         <br />

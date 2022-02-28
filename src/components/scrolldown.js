@@ -5,7 +5,7 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 
 const ScrollDown = () => (
   <p className="scrolldown">
-    <a onClick={() => scrollTo('#about')} activeClass="active" className="test1" to="about">
+    <a onClick={() => scrollTo('#about')} activeClass="active" className="test1" to="about" href="#about">
       <FaChevronCircleDown />
     </a>
   </p>

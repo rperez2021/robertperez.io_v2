@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FaCodeBranch, FaHtml5, FaCss3, FaJs, FaWordpress, FaNodeJs, FaReact, FaPhp, FaLinux, FaAws, FaJava, FaDocker, FaDatabase } from "react-icons/fa"
-import { DiMongodb, DiJqueryLogo, DiFirebase, DiRuby,  } from "react-icons/di"
+import { DiMongodb, DiJqueryLogo, DiFirebase,  } from "react-icons/di"
 
 
 const Skills = () =>  (
