@@ -19,9 +19,11 @@ const Footer = () => (
       </div>
 
       <div id="go-top">
-      <a onClick={() => scrollTo('#home')} onTouchEnd={() => scrollTo('#home')} role="link" activeClass="active" className="linkstyle" to="home" spy={true} smooth={true} duration={500} >
+        <p className="scrollup">
+      <button onClick={() => scrollTo('#home')} onTouchEnd={() => scrollTo('#home')} role="link" className="linkstyle scrollup">
       <FaChevronCircleUp />
-          </a>
+          </button>
+          </p>
       </div>
     </div>
   </footer>

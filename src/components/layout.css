@@ -936,6 +936,8 @@ header .scrolldown button:hover {
   color: #11abb0;
 }
 
+
+
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul,
@@ -983,7 +985,7 @@ ul#nav li {
 }
 
 /* Links */
-ul#nav li a {
+ul#nav li button {
   /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
 
   display: inline-block;
@@ -1000,10 +1002,10 @@ ul#nav li a {
   transition: color 0.2s ease-in-out;
 }
 
-ul#nav li a:active {
+ul#nav li button:active {
   background-color: transparent !important;
 }
-ul#nav li.current a {
+ul#nav li.current button {
   color: #f06000;
 }
 
@@ -1011,19 +1013,29 @@ ul#nav li.current a {
   background-color: transparent !important;
 } */
 
-ul#nav li.current:hover {
+ul#nav li.current button.linkstyle:hover {
   cursor: pointer;
   font-weight: bold;
+  color: #313131;
+  background: none;
 }
 
-ul#nav li.current .linkstyle {
+ul#nav li.current button.linkstyle {
   color:#00E3F0;
   font-weight: bold;
+  background: none;
 }
 
-ul#nav li.current .activelinkstyle {
+ul#nav li.current button.linkstyle:current {
+  color:#00E3F0;
+  font-weight: bold;
+  background: none;
+}
+
+ul#nav li.current button.linkstyle:active {
   color: #f06000;
   font-weight: bold;
+  background: none;
 }
 
 
@@ -1964,13 +1976,36 @@ footer .social li:first-child {
 }
 
 /* Go To Top Button */
+footer .scrollup button {
+  bottom: 30px;
+  left: 50%;
+  margin-left: -29px;
+  color: #fff;
+  display: block;
+  height: 42px;
+  width: 42px;
+  font-size: 42px;
+  line-height: 42px;
+  color: #fff;
+  border-radius: 100%;
+  padding: 0px;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+footer .scrollup button:hover {
+  color: #11abb0;
+}
+
 #go-top {
   position: absolute;
   top: -24px;
   left: 50%;
   margin-left: -30px;
 }
-#go-top a {
+#go-top button {
   text-decoration: none;
   border: 0 none;
   display: block;
@@ -2310,6 +2345,7 @@ a:focus, button:focus {
 
 #nav-wrap.clear {
   background-color: none;
+  transition: ease-in .5s;
 }
 
 #nav-wrap.shaded {

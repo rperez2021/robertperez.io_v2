@@ -1,15 +1,11 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import { Link } from "gatsby"
 import { useScrollPosition } from "./scrollPosition";
 
 const Navigation = () => {
-   console.log("Hello")
    const [scroll, setScroll] = useState(0);
-
    useScrollPosition(function setScrollPosition({ currentPosition }) {
       setScroll(currentPosition.y);
-      console.log(scroll)
    });
 
 
@@ -26,22 +22,22 @@ const Navigation = () => {
          <ul id="nav" className='nav'> 
 
             <li className="current">
-               <Link onClick={() => scrollTo('#home')} tabIndex="0" activeClass="activelinkstyle" className="linkstyle" spy={true} to='#home' smooth={true} duration={500} hashSpy={true}>Home</Link>
+               <button onClick={() => scrollTo('#home')} onTouchEnd={() => scrollTo('#home')} tabIndex="0" className="linkstyle">Home</button>
 
             </li>
 
             <li className="current">
-               <Link onClick={() => scrollTo('#about')} tabIndex="0" activeClass="activelinkstyle" className="linkstyle" spy={true} to='#about' smooth={true} duration={500} hashSpy={true}>About</Link>
+               <button onClick={() => scrollTo('#about')} onTouchEnd={() => scrollTo('#about')} tabIndex="0" className="linkstyle" to='#about'>About</button>
 
             </li>
 
             <li className="current">
-               <Link onClick={() => scrollTo('#resume')} tabIndex="0" activeClass="activelinkstyle" className="linkstyle" spy={true} to='#resume' smooth={true} duration={500} hashSpy={true}>Resume</Link>
+               <button onClick={() => scrollTo('#resume')} onTouchEnd={() => scrollTo('#resume')} tabIndex="0" className="linkstyle" to='#resume'  >Resume</button>
 
             </li>
 
             <li className="current">
-               <Link onClick={() => scrollTo('#portfolio')} tabIndex="0" activeClass="activelinkstyle" className="linkstyle" spy={true} to='#portfolio' smooth={true} duration={500} hashSpy={true}>Portfolio</Link>
+               <button onClick={() => scrollTo('#portfolio')} onTouchEnd={() => scrollTo('#portfolio')} tabIndex="0" className="linkstyle" to='#portfolio'  >Portfolio</button>
 
             </li>
 

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FaFilePdf } from "react-icons/fa";
-import { withPrefix } from "gatsby-link"
 import { StaticImage } from "gatsby-plugin-image"
+import download from "../static/roberto-perez-resume.pdf"
 
 
 const About = ({ children }) => {
@@ -55,7 +55,7 @@ const About = ({ children }) => {
                         </div>
                         <div className="columns download">
                             <p>
-                                <a href={withPrefix('static/roberto-perez-resume.pdf')} download className="button">
+                                <a href={download} download className="button">
                                     <FaFilePdf /> Download Resume
                                 </a>
                             </p>
