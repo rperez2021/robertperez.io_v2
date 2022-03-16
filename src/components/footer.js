@@ -11,21 +11,15 @@ const Footer = () => (
 
         <ul className="copyright">
          
+
           <li>
-            Design by{" "}
-            <a title="Styleshout" href="http://www.styleshout.com/">
-              Styleshout
-            </a>
-          </li>
-          <li>
-            Developed in React ⚛️ by{" "}
-            <a href="https://robertoperez.io">Roberto Perez</a>
+            Developed and Designed by{" "}Roberto Perez with React ⚛️ and Gatsby in {new Date().getFullYear()}
           </li>
         </ul>
       </div>
 
       <div id="go-top">
-      <a onClick={() => scrollTo('#home')} activeClass="active" className="linkstyle" to="home" spy={true} smooth={true} duration={500} >
+      <a onClick={() => scrollTo('#home')} onTouchEnd={() => scrollTo('#home')} role="link" activeClass="active" className="linkstyle" to="home" spy={true} smooth={true} duration={500} >
       <FaChevronCircleUp />
           </a>
       </div>

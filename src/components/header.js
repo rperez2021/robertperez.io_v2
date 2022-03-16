@@ -5,15 +5,13 @@ import Banner from "./banner.js"
 import ScrollDown from "./scrolldown.js"
 
 
-
 const Header = ({ siteTitle }) => (
   <header id="home">
     
           <Navigation></Navigation>
           <Banner></Banner>
           <ScrollDown></ScrollDown>
-   
-    
+         
   </header>
 )
 

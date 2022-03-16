@@ -17,7 +17,7 @@ const IndexPage = () => (
     <Resume/>
     <Portfolio/>
     <Footer/>
-
+    
   </Layout>
 )
 

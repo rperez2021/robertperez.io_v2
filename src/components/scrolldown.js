@@ -5,9 +5,9 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 
 const ScrollDown = () => (
   <p className="scrolldown">
-    <a onClick={() => scrollTo('#about')} activeClass="active" className="test1" to="about" href="#about">
+    <button onClick={() => scrollTo('#about')} onTouchEnd={() => scrollTo('#about')} role="link" activeClass="active" className="test1" to="about" smooth={true}>
       <FaChevronCircleDown />
-    </a>
+    </button>
   </p>
 );
 

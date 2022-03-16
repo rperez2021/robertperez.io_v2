@@ -1,41 +1,56 @@
-import * as React from "react";
+import React, {useEffect, useState} from "react";
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { Link } from "gatsby"
+import { useScrollPosition } from "./scrollPosition";
 
-const Navigation = () => (
- 
-      <nav id="nav-wrap">
-      <a className="mobile-btn" href="#nav-wrap"/>
-        <ul id="nav" className="nav">
+const Navigation = () => {
+   console.log("Hello")
+   const [scroll, setScroll] = useState(0);
 
-        <li className="current">
-         
-        <a onClick={() => scrollTo('#home')} activeClass="activelinkstyle" className="linkstyle" to="home" spy={true} smooth={true} duration={500} hashSpy={true}>
-           Home
-          </a>
-       </li>
-
-        <li className="current">
-        <a onClick={() => scrollTo('#about')} activeClass="activelinkstyle" className="linkstyle" to="about" spy={true} smooth={true} duration={500} hashSpy={true}>
-           About
-        </a>
-       </li>
-
-       <li className="current">
-        <a onClick={() => scrollTo('#resume')} activeClass="activelinkstyle" className="linkstyle" to="resume" spy={true} smooth={true} duration={500} hashSpy={true}>
-           Resume
-        </a>
-       </li>
-
-        <li className="current">
-        <a onClick={() => scrollTo('#portfolio')} activeClass="activelinkstyle" className="linkstyle" to="portfolio" spy={true} smooth={true} duration={500} hashSpy={true}>
-           Portfolio
-        </a>
-       </li>
+   useScrollPosition(function setScrollPosition({ currentPosition }) {
+      setScroll(currentPosition.y);
+      console.log(scroll)
+   });
 
 
-        </ul>
+
+   return (
+
+
+
+
+
+      <nav id="nav-wrap" className={`nav ${scroll < -10 ? 'shaded' : 'clear'}`}>
+
+         <span className="mobile-btn" href="#nav-wrap" />
+         <ul id="nav" className='nav'> 
+
+            <li className="current">
+               <Link onClick={() => scrollTo('#home')} tabIndex="0" activeClass="activelinkstyle" className="linkstyle" spy={true} to='#home' smooth={true} duration={500} hashSpy={true}>Home</Link>
+
+            </li>
+
+            <li className="current">
+               <Link onClick={() => scrollTo('#about')} tabIndex="0" activeClass="activelinkstyle" className="linkstyle" spy={true} to='#about' smooth={true} duration={500} hashSpy={true}>About</Link>
+
+            </li>
+
+            <li className="current">
+               <Link onClick={() => scrollTo('#resume')} tabIndex="0" activeClass="activelinkstyle" className="linkstyle" spy={true} to='#resume' smooth={true} duration={500} hashSpy={true}>Resume</Link>
+
+            </li>
+
+            <li className="current">
+               <Link onClick={() => scrollTo('#portfolio')} tabIndex="0" activeClass="activelinkstyle" className="linkstyle" spy={true} to='#portfolio' smooth={true} duration={500} hashSpy={true}>Portfolio</Link>
+
+            </li>
+
+
+         </ul>
+
       </nav>
-    )
-
+   )
+}
 
 export default Navigation;
+

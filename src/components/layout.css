@@ -912,7 +912,7 @@ header .social li a:hover {
 }
 
 /* scrolldown link */
-header .scrolldown a {
+header .scrolldown button {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -925,13 +925,14 @@ header .scrolldown a {
   line-height: 42px;
   color: #fff;
   border-radius: 100%;
+  padding: 0px;
 
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-header .scrolldown a:hover {
+header .scrolldown button:hover {
   color: #11abb0;
 }
 
@@ -2303,7 +2304,19 @@ footer .social li:first-child {
 
 }
 
+a:focus, button:focus {
+  border: 3px solid yellow !important;
+}
 
+#nav-wrap.clear {
+  background-color: none;
+}
+
+#nav-wrap.shaded {
+  background-color: red;
+  opacity: 150%;
+  transition: ease-in .5s;
+}
 
 
 
