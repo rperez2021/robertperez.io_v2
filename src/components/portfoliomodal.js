@@ -1,6 +1,6 @@
 import * as React from "react";
 import Modal from "react-modal";
-import { FaPlus, FaTag } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa";
 
 Modal.setAppElement('#___gatsby');
 
