@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 const Education = () => (
   <div className="row education">
@@ -19,8 +19,10 @@ const Education = () => (
           </p>
 
           <p>
-            Completed a 6 month Web Development Boot Camp to polish my skills and learn new technologies. 
-            Also created several projects with my classmates such as <span> Bitchin Kitchen </span> and <span> IRL </span>. 
+            Completed a 6 month Web Development Boot Camp to polish my skills
+            and learn new technologies. Also created several projects with my
+            classmates such as <span> Bitchin Kitchen </span> and{' '}
+            <span> IRL </span>.
           </p>
         </div>
       </div>
@@ -35,12 +37,13 @@ const Education = () => (
           </p>
 
           <p>
-            Completed UC Transfer coursework for a physics major. Life happened, didnt transfer.
+            Completed UC Transfer coursework for a physics major. Life happened,
+            didnt transfer.
           </p>
         </div>
       </div>
     </div>
   </div>
-);
+)
 
-export default Education;
+export default Education

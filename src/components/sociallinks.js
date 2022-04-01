@@ -1,15 +1,21 @@
-import * as React from "react";
+import * as React from 'react'
 import {
   FaMedium,
   FaGithub,
   FaEnvelope,
   FaInstagram,
-  FaTwitter
-} from "react-icons/fa";
+  FaTwitter,
+  FaLinkedin
+} from 'react-icons/fa'
 // https://gorangajic.github.io/react-icons/fa.html
 
 const SocialLinks = () => (
   <ul className="social">
+    <li>
+      <a href="https://github.com/rperez2021">
+        <FaLinkedin />
+      </a>
+    </li>
     <li>
       <a href="https://github.com/rperez2021">
         <FaGithub />
@@ -17,7 +23,7 @@ const SocialLinks = () => (
     </li>
 
     <li>
-      <a href="https://twitter.com/smartassrob">
+      <a href="https://twitter.com/robdevelops">
         <FaTwitter />
       </a>
     </li>
@@ -28,7 +34,7 @@ const SocialLinks = () => (
       </a>
     </li>
 
-     <li>
+    <li>
       <a href="https://medium.com/@rob.perez.flores">
         <FaMedium />
       </a>
@@ -40,6 +46,6 @@ const SocialLinks = () => (
       </a>
     </li>
   </ul>
-);
+)
 
-export default SocialLinks;
+export default SocialLinks

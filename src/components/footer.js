@@ -1,7 +1,7 @@
-import * as React from "react";
-import SocialLinks from "./sociallinks";
-import { FaChevronCircleUp } from "react-icons/fa";
-import scrollTo from "gatsby-plugin-smoothscroll"
+import * as React from 'react'
+import SocialLinks from './sociallinks'
+import { FaChevronCircleUp } from 'react-icons/fa'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const Footer = () => (
   <footer id="footer">
@@ -10,23 +10,27 @@ const Footer = () => (
         <SocialLinks />
 
         <ul className="copyright">
-         
-
           <li>
-            Developed and Designed by{" "}Roberto Perez with React ⚛️ and Gatsby in {new Date().getFullYear()}
+            Developed and Designed by Roberto Perez with React ⚛️ and Gatsby in{' '}
+            {new Date().getFullYear()}
           </li>
         </ul>
       </div>
 
       <div id="go-top">
         <p className="scrollup">
-      <button onClick={() => scrollTo('#home')} onTouchEnd={() => scrollTo('#home')} role="link" className="linkstyle scrollup">
-      <FaChevronCircleUp />
+          <button
+            onClick={() => scrollTo('#home')}
+            onTouchEnd={() => scrollTo('#home')}
+            role="link"
+            className="linkstyle scrollup"
+          >
+            <FaChevronCircleUp />
           </button>
-          </p>
+        </p>
       </div>
     </div>
   </footer>
-);
+)
 
-export default Footer;
+export default Footer

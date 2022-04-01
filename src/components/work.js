@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 
 const Work = () => (
   <div className="row work">
@@ -19,24 +19,22 @@ const Work = () => (
           </p>
 
           <p>
-          Owner of Brevity Is a Web Development firm that provides web design and consulting services to businesses, individuals and non-profit organizations.
+            Owner of Brevity Is a Web Development firm that provides web design
+            and consulting services to businesses, individuals and non-profit
+            organizations.
           </p>
           <p>
-          <span>
-          Full Stack Development Experience
-          </span>
-          <br />
-          Managed relationships with a variety of clients to find technical solutions for their problems and provide excellent service. 
-          <br />
-          Experience with a variety of tech stacks LAMP / MERN
-
+            <span>Full Stack Development Experience</span>
+            <br />
+            Managed relationships with a variety of clients to find technical
+            solutions for their problems and provide excellent service.
+            <br />
+            Experience with a variety of tech stacks LAMP / MERN
           </p>
         </div>
       </div>
-
-
     </div>
   </div>
-);
+)
 
-export default Work;
+export default Work
