@@ -23,7 +23,7 @@ const Footer = () => (
             onClick={() => scrollTo('#home')}
             onTouchEnd={() => scrollTo('#home')}
             role="link"
-            className="linkstyle scrollup"
+            className="linkstyle scrollup test1"
           >
             <FaChevronCircleUp />
           </button>
