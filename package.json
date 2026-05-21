@@ -23,6 +23,7 @@
     "react-modal": "^3.16.1"
   },
   "devDependencies": {
+    "@netlify/plugin-gatsby": "^3.8.4",
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.31.0",
@@ -40,6 +41,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
+    "postbuild": "rm -rf .cache/adapters/node_modules/.bin || true",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
