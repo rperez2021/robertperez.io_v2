@@ -1,3 +1,9 @@
 [Settings]
   ID = "d80b7a83-e75b-4986-aff8-aa555e2a52e3"
 
+[build]
+  command = "gatsby build"
+  publish = "public"
+
+[[plugins]]
+  package = "@netlify/plugin-gatsby"

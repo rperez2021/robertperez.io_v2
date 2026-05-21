@@ -7,6 +7,7 @@ module.exports = {
     keywords: `Web Design, Portfolio, Web Developer, San Diego, Brevity Is, Software Developer, Front-End Web Developer`
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
