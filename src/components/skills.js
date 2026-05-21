@@ -10,11 +10,22 @@ import {
   FaPhp,
   FaLinux,
   FaAws,
-  FaJava,
   FaDocker,
-  FaDatabase
+  FaDatabase,
+  FaRobot,
+  FaPlug
 } from 'react-icons/fa'
-import { DiMongodb, DiJqueryLogo, DiFirebase } from 'react-icons/di'
+import {
+  DiMongodb,
+  DiJqueryLogo
+} from 'react-icons/di'
+import {
+  SiTypescript,
+  SiRedux,
+  SiVuedotjs,
+  SiAstro,
+  SiOpenai
+} from 'react-icons/si'
 
 const Skills = () => (
   <div className="row skill">
@@ -27,7 +38,7 @@ const Skills = () => (
     <div className="nine columns main-col">
       <p>
         Below is a list of technologies I am familiar with and have used to
-        create real projects. It is not an definitive list and am constantly
+        create real projects. It is not a definitive list and I am constantly
         learning new tech and experimenting.
       </p>
 
@@ -67,9 +78,18 @@ const Skills = () => (
               <div className="columns">
                 <li>
                   <span className="bar-expand gothis">
+                    <SiTypescript />
+                  </span>
+                  <em>TypeScript</em>
+                </li>
+              </div>
+
+              <div className="columns">
+                <li>
+                  <span className="bar-expand gothis">
                     <FaWordpress />
                   </span>
-                  <em>Wordpress</em>
+                  <em>WordPress</em>
                 </li>
               </div>
 
@@ -78,7 +98,7 @@ const Skills = () => (
                   <span className="bar-expand gothis">
                     <FaNodeJs />
                   </span>
-                  <em>Nodejs</em>
+                  <em>Node.js</em>
                 </li>
               </div>
 
@@ -96,7 +116,7 @@ const Skills = () => (
                   <span className="bar-expand gothis">
                     <DiJqueryLogo />
                   </span>
-                  <em>JQuery</em>
+                  <em>jQuery</em>
                 </li>
               </div>
             </ul>
@@ -118,9 +138,27 @@ const Skills = () => (
               <div className="columns">
                 <li>
                   <span className="bar-expand gettingit">
-                    <FaReact />
+                    <SiRedux />
                   </span>
                   <em>Redux</em>
+                </li>
+              </div>
+
+              <div className="columns">
+                <li>
+                  <span className="bar-expand gettingit">
+                    <SiVuedotjs />
+                  </span>
+                  <em>Vue</em>
+                </li>
+              </div>
+
+              <div className="columns">
+                <li>
+                  <span className="bar-expand gettingit">
+                    <SiAstro />
+                  </span>
+                  <em>Astro</em>
                 </li>
               </div>
 
@@ -154,15 +192,6 @@ const Skills = () => (
               <div className="columns">
                 <li>
                   <span className="bar-expand gettingit">
-                    <DiFirebase />
-                  </span>
-                  <em>Firebase</em>
-                </li>
-              </div>
-
-              <div className="columns">
-                <li>
-                  <span className="bar-expand gettingit">
                     <FaLinux />
                   </span>
                   <em>Linux</em>
@@ -177,6 +206,15 @@ const Skills = () => (
                   <em>AWS</em>
                 </li>
               </div>
+
+              <div className="columns">
+                <li>
+                  <span className="bar-expand gettingit">
+                    <FaDocker />
+                  </span>
+                  <em>Docker</em>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
@@ -187,47 +225,28 @@ const Skills = () => (
               <ul className="skills">
                 <div className="columns">
                   <li>
-                    <span className="bar-expand stilllearning" />
-                    <em>Elixir</em>
+                    <span className="bar-expand stilllearning">
+                      <FaRobot />
+                    </span>
+                    <em>Claude / Anthropic</em>
                   </li>
                 </div>
 
                 <div className="columns">
                   <li>
                     <span className="bar-expand stilllearning">
-                      <FaJava />
+                      <SiOpenai />
                     </span>
-                    <em>Java</em>
-                  </li>
-                </div>
-
-                <div className="columns">
-                  <li>
-                    <span className="bar-expand stilllearning" />
-                    <em>Webpack</em>
+                    <em>ChatGPT / OpenAI</em>
                   </li>
                 </div>
 
                 <div className="columns">
                   <li>
                     <span className="bar-expand stilllearning">
-                      <FaDocker />
+                      <FaPlug />
                     </span>
-                    <em>Docker</em>
-                  </li>
-                </div>
-
-                <div className="columns">
-                  <li>
-                    <span className="bar-expand stilllearning" />
-                    <em>Testing</em>
-                  </li>
-                </div>
-
-                <div className="columns">
-                  <li>
-                    <span className="bar-expand stilllearning" />
-                    <em>Ruby</em>
+                    <em>MCP</em>
                   </li>
                 </div>
               </ul>

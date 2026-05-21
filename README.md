@@ -1,23 +1,41 @@
+# robertperez.io v2
 
+Personal portfolio/bio site for Roberto Perez — live at [robertperez.io](https://robertperez.io).
 
+## Stack
 
-# This is the repo for my personal bio/resume site which can be found [here](https://robertperez.io).
+- **Framework**: Gatsby 4 (React 17)
+- **Hosting**: Netlify (automatic CI/CD from `main` branch)
+- **Plugins**: gatsby-plugin-image, gatsby-plugin-sharp, gatsby-plugin-manifest, gatsby-plugin-react-helmet, gatsby-plugin-smoothscroll, gatsby-plugin-google-analytics
+- **UI**: react-icons, react-slick (testimonials slider), react-modal (portfolio lightbox)
 
- <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-Made with Gatsby
+## Sections
 
+| Section | Component | Notes |
+| --- | --- | --- |
+| Banner / Hero | `banner.js` | Name, tagline, social links |
+| About | `about.js` | Bio, contact details, resume PDF download |
+| Resume | `resume.js` | Wraps Work, Education, Skills |
+| Portfolio | `portfolio.js` | Project cards with modal lightboxes |
+| Testimonials | `testimonials.js` | react-slick carousel |
+| Footer | `footer.js` | Social links, back-to-top |
 
+## Development
 
-```
-npm i -g gatsby-cli
+```bash
 npm install
-gatsby develop
+npm run develop    # dev server at localhost:8000
+npm run build      # production build
+npm run serve      # preview production build
+npm run clean      # clear .cache and public/
 ```
 
-Site runs at localhost:8000
+> **Note:** Node 16–18 is required for Gatsby 4. Node 20+ requires Gatsby 5.
 
-Deployed and hosted on Netlify with automatic CI/CD through github.
+## Deploy
 
-## A Fancy Repo Visualization
+Deployed via Netlify. Every push to `main` triggers a production build. The Netlify site ID is in `netlify.toml`.
+
+## Repo Visualization
 
 ![Visualization of the codebase](./diagram.svg)

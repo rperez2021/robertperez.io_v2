@@ -7,12 +7,11 @@ import {
   FaTwitter,
   FaLinkedin
 } from 'react-icons/fa'
-// https://gorangajic.github.io/react-icons/fa.html
 
 const SocialLinks = () => (
   <ul className="social">
     <li>
-      <a href="https://github.com/rperez2021">
+      <a href="https://www.linkedin.com/in/roberto-perez-sd/">
         <FaLinkedin />
       </a>
     </li>
