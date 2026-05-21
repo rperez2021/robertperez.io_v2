@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(where.exe node 2>$null; where.exe npm 2>$null; Get-ChildItem \"C:\\\\Users\\\\rob_s\\\\\" -Directory | Where-Object { $_.Name -match 'node|nvm' })"
+    ]
+  }
+}
